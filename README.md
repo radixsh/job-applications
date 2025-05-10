@@ -21,7 +21,7 @@ applications were. It looks like I've done tolerably well.
 `extract_career.py` filters for full-time positions from a CSV.
 
 `bayesian.py data/ALL_APPS.csv` calculates conditional probabilities of various
-joint events.
+joint events and generates piecharts using Matplotlib.
 
 
 ## Results
@@ -75,3 +75,7 @@ Interview/OA [1] Hired
   diagrams
 - [r/DataIsBeautiful](https://reddit.com/r/dataisbeautiful) - for the
   inspiration
+- [Wikipedia - Bayesian
+  statistics](https://en.wikipedia.org/wiki/Bayesian_statistics) - to refresh my
+  understanding of conditional probability
+- [Matplotlib](https://matplotlib.org/) - to create piecharts
