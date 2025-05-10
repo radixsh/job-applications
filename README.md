@@ -6,11 +6,6 @@ slightly concerning job application data from
 make this; I thought it would be nice to see how successful (or not) my
 applications were. It looks like I've done tolerably well.
 
-**`generate_sankey.py` generates SankeyMATIC-formatted data** from a CSV
-downloaded from a Notion database.
-
-`extract_career.py` filters for full-time positions from a CSV.
-
 ## Usage
 1. Export your entire job applications database from Notion, keeping all default
    settings except for changing `Include content` to `No files or images`. The
@@ -18,9 +13,16 @@ downloaded from a Notion database.
    `/data` directory.
 	- To consider only applications to career positions, run
 	  `extract_career.py data/ALL_APPS.csv data/CAREER_ONLY.csv`.
-2. Run `generate_sankey.py data/ALL_APPS.csv`.
-3. Use the Sankey-formatted data from the script output to [create a Sankey
+2. Run `generate_sankey.py data/ALL_APPS.csv` to generate SankeyMATIC-formatted
+   data.
+3. Use the Sankey-formatted data to [create a Sankey
    diagram](https://www.sankeymatic.com/build/).
+
+`extract_career.py` filters for full-time positions from a CSV.
+
+`bayesian.py data/ALL_APPS.csv` calculates conditional probabilities of various
+joint events.
+
 
 ## Results
 ### All applications throughout undergrad
