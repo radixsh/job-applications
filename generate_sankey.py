@@ -17,8 +17,8 @@ def generate_sankey(csv_reader):
         if row["Interview?"] == "No" and row["OA?"] == "No":
             data.append(f'{source}, {row["Stage"]}')
         elif row["Interview?"] == "Yes" or row["OA?"] == "Yes":
-            data.append(f'{source}, Interview/OA')
-            data.append(f'Interview/OA, {row["Stage"]}')
+            data.append(f'{source}, Interview')
+            data.append(f'Interview, {row["Stage"]}')
         else:
             data.append(f'{source}, {row["Stage"]}')
 
